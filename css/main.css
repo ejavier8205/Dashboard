@@ -1,13 +1,21 @@
 body {
     background-color: lightgray;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     
     font-family: 'Poppins', sans-serif;
-    font-size:3vw;
-    color:grey;
+    font-size:60px;
+    background-color: rgb(127, 66, 170);
+    color:white;
     text-align: left;
+    text-indent: 2%;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    max-width: 80%;
 }
 
 small {
@@ -15,15 +23,85 @@ small {
     font-family: 'Poppins', sans-serif;
     font-size:1vw;
     color:grey;
+    z-index: 1;
+    position: relative;
+    padding: 1%;
 }  
 
 
-li {
+nav {
     font-family: 'Poppins', sans-serif;
-    font-size:1vw;
-    color:grey;
+    font-size:20px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 1;
+    position: relative;
 }
 
-nav {
-    background-color: darkgrey;
+li {
+    list-style-type: none;
+    letter-spacing: 3px;
+    z-index: 1;
+}
+
+li a {
+    width: 300px;
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+    border: 1px purple
+
+}
+
+
+
+
+
+a:hover {
+    text-decoration:none;
+}
+#back_to_camera {
+    background: rgba(255,255,255,.9);
+    clear: both;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.fluid_container {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+#camera_wrap_4 {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin-bottom: 0!important;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.camera_bar {
+    z-index: 2;
+}
+.camera_thumbs {
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+}
+.camera_thumbs_cont {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+.camera_overlayer {
+    opacity: .1;
 }
