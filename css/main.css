@@ -1,3 +1,8 @@
+
+* {
+    margin: 0;
+}
+
 body {
     background-color: lightgray;
     margin: 0;
@@ -21,7 +26,7 @@ h1 {
 small {
     
     font-family: 'Poppins', sans-serif;
-    font-size:1vw;
+    font-size:20px;
     color:grey;
     z-index: 1;
     position: relative;
@@ -32,11 +37,10 @@ small {
 nav {
     font-family: 'Poppins', sans-serif;
     font-size:20px;
-    margin: 0;
-    padding: 0;
-    float: left;
+    /**float: left;**/
     z-index: 1;
     position: relative;
+    border: 10px purple;
 }
 
 li {
@@ -48,10 +52,9 @@ li {
 li a {
     width: 300px;
     display: block;
-    padding: 8px;
+    padding: 1vw;
     background-color: #dddddd;
-    border: 1px purple
-
+    text-indent: 1%;
 }
 
 
