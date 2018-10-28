@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -11,6 +12,8 @@ body {
 }
 
 h1 {  
+    display: block;
+    border-radius: 5px 0px 90px 5px;
     font-family: 'Montserrat', sans-serif;
     font-size:60px;
     /**background-color: rgb(127, 66, 170);**/
@@ -22,27 +25,39 @@ h1 {
     width: 80%;
     max-width: 80%;
     opacity:0.8;
-    background-image: linear-gradient(to right,rgb(0, 147, 167), grey  )
+    background-image: linear-gradient(to right,rgb(0, 147, 167), grey  );
+    margin: 10px;
+    /**border: 5px solid rgba(0, 128, 0, 0);**/
     /**border-bottom:25px solid grey;**/
+}
+
+h5 {
+    z-index: 1;
+    position: relative;
+    opacity: 0.9;
 }
 
 
     
-
+.dalywebsite {
+    z-index: 1;
+    position: relative; 
+}
 
 .daly {
     font-family: 'Poppins', sans-serif;
     color: #75b956;
 }
 
-small {
+.version {
     
     font-family: 'Poppins', sans-serif;
-    font-size:20px;
-    color:grey;
+    font-size:10px;
+    color:rgb(194, 194, 194);
     z-index: 1;
     position: relative;
-    padding: 1%;
+    border-radius: 5px 50px 50px 5px;
+    margin: 10px;
 }  
 
 
@@ -52,6 +67,7 @@ nav {
     /**float: left;**/
     z-index: 1;
     position: relative;
+    margin: 10px;
 
 }
 
@@ -62,11 +78,14 @@ li {
     list-style-position:inside;
     border: 5px solid rgba(0, 128, 0, 0);
     width: 200px;
+    transition: 0.3s;
+    cursor: pointer;
+
 }
 
 li a {
     
-    display: flex;
+    display: block;
     padding: 10px;
     background-color: #75b956;
     text-indent: 10%;
@@ -75,8 +94,11 @@ li a {
     border-radius: 5px 50px 50px 5px;
 }
 
-
-
+div.documentations {
+    color: #111;
+    margin: 20px;
+    background-color: #75b956;   
+}
 
 a:link {
     background-color: transparent; 
@@ -92,13 +114,12 @@ a:visited {
 
 a:hover {
     color:rgb(0, 0, 0);
-    background-color: rgb(102, 243, 137);
+    background-color: rgb(190, 214, 196);
 }
 
 a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
+    color: white;
+    background-color: green;
 }
 
 #back_to_camera {
@@ -144,4 +165,66 @@ a:active {
 }
 .camera_overlayer {
     opacity: .1;
+}
+
+
+/**SIDE BAR**/
+.sidebar {
+    font-family: 'Dosis', sans-serif;
+    height: 100%;
+    width: 0 ;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity:0.9;
+    letter-spacing: 3px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition-duration: 0.4s;
+}
+
+.sidebar a:hover {
+    color: #004b44;
+    background-color: aquamarine;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: #111;
+    color: cadetblue;
+    border: 0;
+    opacity:0.9;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
 }

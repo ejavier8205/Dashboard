@@ -29,18 +29,28 @@
     
     <header>
         <h1><span class="daly">Daly</span> Production Dashboard</h1>
-        <a class="dalyWebsite" href="https://www.daly.com/">Daly.com</a>
-        <small>Version 1.0</small>
+        <small class="Version">Version 1.0</small>
        
     </header>
 
     <nav>
         <ul>
-            <li><a>Customers</a></li>
+            <li><a id="customers" onclick="openNav()">Customers</a></li>
             <li><a>Labels</a></li>
             <li><a>Tools</a></li>
         </ul>
     </nav>
+
+    <div id="mySidebar" class="sidebar">
+            <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
+            <div class="documentations">
+                <a >Customer's Documentations</a>
+            </div>  
+            <a href="#">PWCS       -     Prince William County</a>
+            <a href="#">AACPS      -     Anne Arundel Co.</a>
+            <a href="#">BCPS       -     Baltimore City</a>
+            <a href="#">BOE-BCPS   -     Baltimore County</a>
+          </div>
 
     <div class="fluid_container">
         <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
