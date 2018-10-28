@@ -1,6 +1,7 @@
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -9,18 +10,29 @@ body {
     padding: 0;
 }
 
-h1 {
-    
-    font-family: 'Poppins', sans-serif;
+h1 {  
+    font-family: 'Montserrat', sans-serif;
     font-size:60px;
-    background-color: rgb(127, 66, 170);
-    color:white;
+    /**background-color: rgb(127, 66, 170);**/
+    color:rgb(230, 230, 230);
     text-align: left;
     text-indent: 2%;
     position: relative;
     z-index: 1;
     width: 80%;
     max-width: 80%;
+    opacity:0.8;
+    background-image: linear-gradient(to right,rgb(0, 147, 167), grey  )
+    /**border-bottom:25px solid grey;**/
+}
+
+
+    
+
+
+.daly {
+    font-family: 'Poppins', sans-serif;
+    color: #75b956;
 }
 
 small {
@@ -35,35 +47,60 @@ small {
 
 
 nav {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-size:20px;
     /**float: left;**/
     z-index: 1;
     position: relative;
-    border: 10px purple;
+
 }
 
 li {
     list-style-type: none;
     letter-spacing: 3px;
     z-index: 1;
+    list-style-position:inside;
+    border: 5px solid rgba(0, 128, 0, 0);
+    width: 200px;
 }
 
 li a {
-    width: 300px;
-    display: block;
-    padding: 1vw;
-    background-color: #dddddd;
-    text-indent: 1%;
+    
+    display: flex;
+    padding: 10px;
+    background-color: #75b956;
+    text-indent: 10%;
+    opacity:0.8;
+    color: white;
+    border-radius: 5px 50px 50px 5px;
 }
 
 
 
 
+a:link {
+    background-color: transparent; 
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: rgb(245, 133, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
 
 a:hover {
-    text-decoration:none;
+    color:rgb(0, 0, 0);
+    background-color: rgb(102, 243, 137);
 }
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 #back_to_camera {
     background: rgba(255,255,255,.9);
     clear: both;
