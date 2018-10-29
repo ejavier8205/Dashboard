@@ -1,6 +1,6 @@
 function openNav() {
-    document.getElementById("mySidebar").style.width = "400px";
-    document.getElementById("main").style.marginLeft = "400px";
+    document.getElementById("mySidebar").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
 }
 
 function closeNav() {
