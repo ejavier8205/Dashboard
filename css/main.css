@@ -37,7 +37,12 @@ h5 {
     opacity: 0.9;
 }
 
+.buttonimage {
+    right: 10px;
+    position: relative;
+    display: inline;
 
+}
     
 .dalywebsite {
     z-index: 1;
@@ -92,6 +97,7 @@ li a {
     opacity:0.8;
     color: white;
     border-radius: 5px 50px 50px 5px;
+    po
 }
 
 div.documentations {
