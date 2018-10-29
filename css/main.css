@@ -1,0 +1,251 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {  
+    display: block;
+    border-radius: 5px 0px 90px 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:60px;
+    /**background-color: rgb(127, 66, 170);**/
+    color:rgb(230, 230, 230);
+    text-align: left;
+    text-indent: 2%;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    max-width: 80%;
+    opacity:0.8;
+    background-image: linear-gradient(to right,rgb(0, 147, 167), grey  );
+    margin: 10px;
+    /**border: 5px solid rgba(0, 128, 0, 0);**/
+    /**border-bottom:25px solid grey;**/
+}
+
+h5 {
+    z-index: 1;
+    position: relative;
+    opacity: 0.9;
+}
+
+.buttonimage {
+    right: 10px;
+    position: relative;
+    display: inline;
+
+}
+    
+.dalywebsite {
+    z-index: 1;
+    position: relative; 
+}
+
+.daly {
+    font-family: 'Poppins', sans-serif;
+    color: #75b956;
+}
+
+.version {
+    
+    font-family: 'Poppins', sans-serif;
+    font-size:10px;
+    color:rgb(194, 194, 194);
+    z-index: 1;
+    position: relative;
+    border-radius: 5px 50px 50px 5px;
+    margin: 10px;
+}  
+
+.customerabbr {
+    color: #75b956;
+    font-weight: bold;
+    display: inline;
+    position: sticky;
+}
+
+
+
+.customerName {
+
+    display: block;
+    position: sticky;
+    left: 50px;
+}
+
+nav {
+    font-family: 'Dosis', sans-serif;
+    font-size:20px;
+    /**float: left;**/
+    z-index: 1;
+    position: relative;
+    margin: 10px;
+
+}
+
+li {
+    list-style-type: none;
+    letter-spacing: 3px;
+    z-index: 1;
+    list-style-position:inside;
+    border: 5px solid rgba(0, 128, 0, 0);
+    width: 200px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+li a {
+    
+    display: block;
+    padding: 10px;
+    background-color: #75b956;
+    text-indent: 10%;
+    opacity:0.8;
+    color: white;
+    border-radius: 5px 50px 50px 5px;
+}
+
+.documentations {
+    color: #111;
+    margin: 0   ;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+a:link {
+    background-color: transparent; 
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: rgb(245, 133, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(0, 0, 0);
+    background-color: rgb(190, 214, 196);
+    font-weight: bolder;
+}
+
+a:active {
+    color: white;
+    background-color: green;
+}
+
+#back_to_camera {
+    background: rgba(255,255,255,.9);
+    clear: both;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.fluid_container {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+#camera_wrap_4 {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin-bottom: 0!important;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.camera_bar {
+    z-index: 2;
+}
+.camera_thumbs {
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+}
+.camera_thumbs_cont {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+.camera_overlayer {
+    opacity: .1;
+}
+
+
+/**SIDE BAR**/
+.sidebar {
+    font-family: 'Dosis', sans-serif;
+    height: 100%;
+    width: 0 ;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity:0.9;
+    letter-spacing: 3px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition-duration: 0.4s;
+}
+
+.sidebar a:hover {
+    color: #000000;
+    background-color: rgb(100, 100, 100);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: #111;
+    color: cadetblue;
+    border: 0;
+    opacity:0.9;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
