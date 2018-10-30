@@ -11,13 +11,38 @@ body {
     padding: 0;
 }
 
+div
+{
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul
+{
+	list-style: none;
+	margin-bottom: 0px;
+}
+p
+{
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+	line-height: 1.7;
+	font-weight: 400;
+	color: #828282;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
 h1 {  
     display: block;
     border-radius: 5px 0px 90px 5px;
     font-family: 'Montserrat', sans-serif;
     font-size:60px;
     /**background-color: rgb(127, 66, 170);**/
-    color:rgb(230, 230, 230);
+    color: #FFFFFF;
     text-align: left;
     text-indent: 2%;
     position: relative;
@@ -30,7 +55,23 @@ h1 {
     /**border: 5px solid rgba(0, 128, 0, 0);**/
     /**border-bottom:25px solid grey;**/
 }
-
+.submenu
+{
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	min-width: 100%;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+	-webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
+}
 h5 {
     z-index: 1;
     position: relative;
@@ -51,7 +92,7 @@ h5 {
 
 .daly {
     font-family: 'Poppins', sans-serif;
-    color: #75b956;
+    color: #65e02c;
 }
 
 .version {
