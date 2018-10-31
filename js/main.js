@@ -1,3 +1,4 @@
+/*AACPS*/
 function openNavAACPS()
 {
     document.getElementById("AACPS").style.width = "300px";
@@ -10,6 +11,72 @@ function closeNavAACPS()
     document.getElementById("main").style.marginLeft= "0";
 }
 
+/*BCPS*/
+function openNavBCPS()
+{
+    document.getElementById("BCPS").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+}
+
+function closeNavBCPS() 
+{
+    document.getElementById("BCPS").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+/*BOE-BCPS*/
+function openNavBOEBCPS()
+{
+    document.getElementById("BOEBCPS").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+}
+
+function closeNavBOEBCPS() 
+{
+    document.getElementById("BOEBCPS").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+/*CCPS*/
+function openNavCCPS()
+{
+    document.getElementById("CCPS").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+}
+
+function closeNavCCPS() 
+{
+    document.getElementById("CCPS").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+/*FCPS*/
+function openNavFCPS()
+{
+    document.getElementById("FCPS").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+}
+
+function closeNavFCPS() 
+{
+    document.getElementById("FCPS").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+/*LCPS*/
+function openNavLCPS()
+{
+    document.getElementById("LCPS").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+}
+
+function closeNavLCPS() 
+{
+    document.getElementById("LCPS").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+/*PWCS*/
 function openNavPWCS() 
 {
     document.getElementById("PWCS").style.width = "300px";
@@ -19,6 +86,58 @@ function openNavPWCS()
 function closeNavPWCS() 
 {
     document.getElementById("PWCS").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+/*SCPS*/
+function openNavSCPS()
+{
+    document.getElementById("SCPS").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+}
+
+function closeNavSCPS() 
+{
+    document.getElementById("SCPS").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+/*VDSS*/
+function openNavVDSS()
+{
+    document.getElementById("VDSS").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+}
+
+function closeNavVDSS() 
+{
+    document.getElementById("VDSS").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+/*Labels*/
+function openNavLabels()
+{
+    document.getElementById("Labels").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+}
+
+function closeNavLabels() 
+{
+    document.getElementById("Labels").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+/*Tools*/
+function openNavTools()
+{
+    document.getElementById("Tools").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+}
+
+function closeNavTools() 
+{
+    document.getElementById("Tools").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
 

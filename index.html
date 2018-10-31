@@ -35,35 +35,86 @@
     
     <header>
         <h1><span class="daly">Daly</span> Production Dashboard</h1>
+        <img type="buttonimage" class="fullScreenbtn"  onclick="toggleFullScreen()" src="images/fullScreen.png">
         <small class="Version">Version 1.0</small>
        
     </header>
 
-    <img type="buttonimage" class="fullScreenbtn"  onclick="toggleFullScreen()" src="images/fullScreen.png">
     
-    <nav>
+ <div class="mainmenublock">
+    <nav class="mainmenu">
         <ul>
             <li><a onclick="openNavAACPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">AACPS</span><span class="customerName">Anne Arundel Co.</span></a></li>
-            <li><a onclick="openNavPWCS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">BCPS</span><span class="customerName">Baltimore City</span></a></li>
-            <li><a onclick="openNavPWCS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">BOE-BCPS</span><span class="customerName">Baltimore Co.</span></a></li>
-            <li><a onclick="openNavPWCS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">CCPS</span><span class="customerName">Charles Co.</span></a></li>
-            <li><a onclick="openNavPWCS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">FCPS</span><span class="customerName">Frederick Co.</span></a></li>
-            <li><a onclick="openNavPWCS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">LCPS</span><span class="customerName">Loudoun</span></a></li>
+            <li><a onclick="openNavBCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">BCPS</span><span class="customerName">Baltimore City</span></a></li>
+            <li><a onclick="openNavBOEBCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">BOE-BCPS</span><span class="customerName">Baltimore Co.</span></a></li>
+            <li><a onclick="openNavCCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">CCPS</span><span class="customerName">Charles Co.</span></a></li>
+            <li><a onclick="openNavFCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">FCPS</span><span class="customerName">Frederick Co.</span></a></li>
+            <li><a onclick="openNavLCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">LCPS</span><span class="customerName">Loudoun</span></a></li>
             <li><a onclick="openNavPWCS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">PWCS</span><span class="customerName">Prince William Co.</span></a></li>
-            <li><a onclick="openNavPWCS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">SCPS</span><span class="customerName">Stafford Co.</span></a></li>
-            <li><a onclick="openNavPWCS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">VDSS</span><span class="customerName">Va. Social Servies</span></a></li>
-            <li><a><img class="buttonimage" src="images/doubleArrow.png">Labels</a></li>
-            <li><a><img class="buttonimage" src="images/doubleArrow.png">Tools</a></li>
+            <li><a onclick="openNavSCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">SCPS</span><span class="customerName">Stafford Co.</span></a></li>
+            <li><a onclick="openNavVDSS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">VDSS</span><span class="customerName">Va. Social Servies</span></a></li>
+            <li><a onclick="openNavLabels()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Labels</span><span class="customerName">Production Labels</span></a></li>
+            <li><a onclick="openNavTools()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Tools</span><span class="customerName">Production Tools</span></a></li>
+            <li><a onclick="openNavTools()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Tools</span><span class="customerName">Production Tools</span></a></li>
+            <li><a onclick="openNavTools()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Tools</span><span class="customerName">Production Tools</span></a></li>
+            <li><a onclick="openNavTools()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Tools</span><span class="customerName">Production Tools</span></a></li>
+            <li><a onclick="openNavTools()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Tools</span><span class="customerName">Production Tools</span></a></li>
         </ul>
     </nav>
+</div>
 
     <div id="AACPS" class="sidebar">
             <button href="javascript:void(0)" class="closebtn" onclick="closeNavAACPS()">×</button>
             <div class="documentations">
                 <p>AACPS</p>
             </div>  
-            <a href="#"><span class="customeroptions">Imaging</span>
-            <a href="#"><span class="customeroptions">Asset Tagging</span>
+            <a href="\\STORAGE1\Prod\Quality Assurance\AACPS\IMAGING\" target="_blank"><span class="customeroptions">Windows Imaging</span></a>
+            <a href="#"><span class="customeroptions">Asset Tagging</span></a>
+    </div>
+
+    <div id="BCPS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavBCPS()">×</button>
+        <div class="documentations">
+            <p>BCPS</p>
+        </div>  
+        <a><span class="customeroptions">Windows Imaging</span></a>
+        <a href="#"><span class="customeroptions">Chromebook Enrollment</span></a>
+        <a href="#"><span class="customeroptions">Asset Tagging</span></a>
+    </div>
+
+    <div id="BOEBCPS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavBOEBCPS()">×</button>
+        <div class="documentations">
+            <p>BOE-BCPS</p>
+        </div>  
+        <a href="#"><span class="customeroptions">Windows Imaging</span></a>
+    </div>
+
+    <div id="CCPS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavCCPS()">×</button>
+        <div class="documentations">
+            <p>CCPS</p>
+        </div>  
+        <a href="#"><span class="customeroptions">Windows Imaging</span></a>
+    </div>
+
+    <div id="FCPS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavFCPS()">×</button>
+        <div class="documentations">
+            <p>FCPS</p>
+        </div>  
+        <a href="#"><span class="customeroptions">Chromebook Enrollment</span></a>
+    </div>
+
+    <div id="LCPS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavLCPS()">×</button>
+        <div class="documentations">
+            <p>LCPS</p>
+        </div>  
+        <a href="#"><span class="customeroptions">Windows Imaging</span></a>
+        <a href="#"><span class="customeroptions">Chromebook Enrollment</span></a>
+        <a href="#"><span class="customeroptions">IPad Enrollment</span></a>
+        <a href="#"><span class="customeroptions">Asset Tagging</span></a>
     </div>
 
     <div id="PWCS" class="sidebar">
@@ -71,8 +122,48 @@
         <div class="documentations">
             <p>PWCS</p>
         </div>  
-        <a href="#"><span class="customeroptions">Imaging</span>
-        <a href="#"><span class="customeroptions">Asset Tagging</span>
+        <a href="#"><span class="customeroptions">Windows Imaging</span></a>
+        <a href="#"><span class="customeroptions">Asset Tagging</span></a>
+    </div>
+
+    <div id="SCPS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavSCPS()">×</button>
+        <div class="documentations">
+            <p>SCPS</p>
+        </div>  
+        <a href="#"><span class="customeroptions">Chromebook Enrollment</span></a>
+    </div>
+
+    <div id="VDSS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavVDSS()">×</button>
+        <div class="documentations">
+            <p>VDSS</p>
+        </div>  
+        <a href="#"><span class="customeroptions">Asset Tagging</span></a>
+    </div>
+
+    <div id="Labels" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavLabels()">×</button>
+        <div class="documentations">
+            <p>Labels</p>
+        </div>  
+        <a href="#"><span class="customeroptions">Shipping Labels</span></a>
+        <a href="#"><span class="customeroptions">Cart Numbers</span></a>
+        <a href="#"><span class="customeroptions">Cart Letter-Number</span></a>
+        <a href="#"><span class="customeroptions">PC Cart ID</span></a>
+        <a href="#"><span class="customeroptions">Refresh Label</span></a>
+        <a href="#"><span class="customeroptions">Staging Sign</span></a>
+        <a href="#"><span class="customeroptions">In Progress Sign</span></a>
+        <a href="#"><span class="customeroptions">W.F.P. Sign</span></a>
+    </div>
+
+    <div id="Tools" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavTools()">×</button>
+        <div class="documentations">
+            <p>Tools</p>
+        </div>  
+        <a href="#"><span class="customeroptions">Scan Dashboard</span></a>
+        <a href="#"><span class="customeroptions">New Scan</span></a>
     </div>
 
     <div class="fluid_container">

@@ -15,13 +15,13 @@ body {
 
 {
     display: block;
-    position: absolute;
-    z-index: 1;
-    padding: 0;
-    margin: 0;
+    position: fixed;
+    z-index: 3;
+    padding: 1;
+    margin: 1;
     right: 0%;
-    left: 96%;
-    top: 2%;
+    left: 95%;
+    top: 1%;
 }
 
 div
@@ -60,7 +60,7 @@ h1 {
     text-indent: 2%;
     position: fixed;
     z-index: 1;
-    width: 80%;
+    width: 75%;
     max-width: 80%;
     opacity:0.8;
     background-image: linear-gradient(to right,rgb(0, 147, 167), grey  );
@@ -106,7 +106,7 @@ h5 {
 
 .daly {
     font-family: 'Poppins', sans-serif;
-    color: #65e02c;
+    color: rgb(204, 255, 110);
 }
 
 .version {
@@ -121,7 +121,7 @@ h5 {
 }  
 
 .customerabbr {
-    color: #cceebc;
+    color:rgb(0, 225, 255);
     font-weight: bold;
     display: inline;
     position: sticky;
@@ -132,7 +132,7 @@ h5 {
     font-weight: bold;
     display: inline;
     position: sticky;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
@@ -140,8 +140,13 @@ h5 {
 
     display: block;
     position: sticky;
-    left: 50px;
+    left: 10px;
     font-size: 15px;
+    background-color: rgb(124, 124, 124);
+    border-radius: 5px 50px 50px 5px;
+    color: #ffffff;
+    padding: 0;
+    width: 90%;
 }
 
 nav {
@@ -151,8 +156,31 @@ nav {
     z-index: 1;
     position: relative;
     margin: 10px;
+    
 
 }
+
+.mainmenu
+{
+    
+    display: block;
+    position: relative;
+    width: 200px;
+}
+
+.mainmenublock 
+
+{
+    overflow: auto;
+    display: block;
+    position: relative;
+    height: 80%;
+    z-index: 1;
+    top: 30px;
+    
+   
+}
+
 
 li {
     list-style-type: none;
@@ -163,25 +191,38 @@ li {
     width: 200px;
     transition: 0.3s;
     cursor: pointer;
+    padding: 0;
 }
 
 li a {
     
     display: block;
     padding: 10px;
-    background-color: #75b956;
+    background-color: rgb(0, 147, 167);
     text-indent: 10%;
-    opacity:0.8;
-    color: white;
+    opacity: 0.9%;
     border-radius: 5px 50px 50px 5px;
+    font-weight: bolder;
+    width: 95%;
+    transition-duration: 0.4s;
 }
 
 .documentations 
 {
     color: #111;
-    margin: 0   ;
+    padding: 0;
+    margin: 1;
     text-transform: uppercase;
     font-weight: bolder;
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 250px;
+    top: 0px;
+    left: 20px;
+    background-color: #828282;
+    border-radius: 50px 50px 50px 50px;
+    
 }
 
 a:link {
@@ -196,10 +237,11 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
-    color:rgb(0, 0, 0);
-    background-color: rgb(190, 214, 196);
+a:hover 
+{
+    background-color: rgb(255, 255, 137);
     font-weight: bolder;
+    
 }
 
 a:active {
@@ -226,7 +268,8 @@ a:active {
     top: 0;
     z-index: 0;
 }
-#camera_wrap_4 {
+#camera_wrap_4 
+{
     bottom: 0;
     height: 100%;
     left: 0;
@@ -241,7 +284,7 @@ a:active {
 .camera_thumbs {
     margin-top: -100px;
     position: relative;
-    z-index: 1;
+    z-index: 4;
 }
 .camera_thumbs_cont {
     border-radius: 0;
@@ -283,15 +326,17 @@ a:active {
 
 .sidebar p
 {
-    padding: 8px 8px 8px 32px;
+
     text-decoration: none;
-    font-size: 50px;
+    font-size: 30px;
     color: #ffffff;
     display: block;
-    transition-duration: 0.4s;    
+    transition-duration: 0.4s;
+
 }
 
-.sidebar a:hover {
+.sidebar a:hover 
+{
     color: #000000;
     background-color: rgb(100, 100, 100);
 }
