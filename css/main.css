@@ -38,20 +38,21 @@ p
 
 h1 {  
     display: block;
-    border-radius: 5px 0px 90px 5px;
+    border-radius: 0px 0px 90px 5px;
     font-family: 'Montserrat', sans-serif;
     font-size:60px;
     /**background-color: rgb(127, 66, 170);**/
     color: #FFFFFF;
     text-align: left;
     text-indent: 2%;
-    position: relative;
+    position: fixed;
     z-index: 1;
     width: 80%;
     max-width: 80%;
     opacity:0.8;
     background-image: linear-gradient(to right,rgb(0, 147, 167), grey  );
     margin: 10px;
+    left: 250px;
     /**border: 5px solid rgba(0, 128, 0, 0);**/
     /**border-bottom:25px solid grey;**/
 }
@@ -107,12 +108,19 @@ h5 {
 }  
 
 .customerabbr {
-    color: #75b956;
+    color: #cceebc;
     font-weight: bold;
     display: inline;
     position: sticky;
 }
 
+.customeroptions {
+    color: #cceebc;
+    font-weight: bold;
+    display: inline;
+    position: sticky;
+    font-size: 30px;
+}
 
 
 .customerName {
@@ -120,6 +128,7 @@ h5 {
     display: block;
     position: sticky;
     left: 50px;
+    font-size: 15px;
 }
 
 nav {
@@ -154,7 +163,8 @@ li a {
     border-radius: 5px 50px 50px 5px;
 }
 
-.documentations {
+.documentations 
+{
     color: #111;
     margin: 0   ;
     text-transform: uppercase;
@@ -180,7 +190,7 @@ a:hover {
 }
 
 a:active {
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: green;
 }
 
@@ -230,6 +240,7 @@ a:active {
 }
 
 
+
 /**SIDE BAR**/
 .sidebar {
     font-family: 'Dosis', sans-serif;
@@ -247,13 +258,24 @@ a:active {
     letter-spacing: 3px;
 }
 
-.sidebar a {
+.sidebar a 
+{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
     color: #ffffff;
     display: block;
-    transition-duration: 0.4s;
+    transition-duration: 0.4s;    
+}
+
+.sidebar p
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #ffffff;
+    display: block;
+    transition-duration: 0.4s;    
 }
 
 .sidebar a:hover {
