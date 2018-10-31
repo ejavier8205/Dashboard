@@ -141,6 +141,8 @@ function closeNavTools()
     document.getElementById("main").style.marginLeft= "0";
 }
 
+
+
 /* Get the documentElement (<html>) to display the page in fullscreen */
 var elem = document.documentElement;
 
