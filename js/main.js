@@ -1,8 +1,8 @@
 /*AACPS*/
 function openNavAACPS()
 {
-    document.getElementById("AACPS").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
+    document.getElementById("AACPS").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
 }
 
 function closeNavAACPS() 
@@ -14,8 +14,8 @@ function closeNavAACPS()
 /*BCPS*/
 function openNavBCPS()
 {
-    document.getElementById("BCPS").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
+    document.getElementById("BCPS").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
 }
 
 function closeNavBCPS() 
@@ -27,8 +27,8 @@ function closeNavBCPS()
 /*BOE-BCPS*/
 function openNavBOEBCPS()
 {
-    document.getElementById("BOEBCPS").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
+    document.getElementById("BOEBCPS").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
 }
 
 function closeNavBOEBCPS() 
@@ -40,8 +40,8 @@ function closeNavBOEBCPS()
 /*CCPS*/
 function openNavCCPS()
 {
-    document.getElementById("CCPS").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
+    document.getElementById("CCPS").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
 }
 
 function closeNavCCPS() 
@@ -53,8 +53,8 @@ function closeNavCCPS()
 /*FCPS*/
 function openNavFCPS()
 {
-    document.getElementById("FCPS").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
+    document.getElementById("FCPS").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
 }
 
 function closeNavFCPS() 
@@ -66,8 +66,8 @@ function closeNavFCPS()
 /*LCPS*/
 function openNavLCPS()
 {
-    document.getElementById("LCPS").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
+    document.getElementById("LCPS").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
 }
 
 function closeNavLCPS() 
@@ -79,8 +79,8 @@ function closeNavLCPS()
 /*PWCS*/
 function openNavPWCS() 
 {
-    document.getElementById("PWCS").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
+    document.getElementById("PWCS").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
 }
 
 function closeNavPWCS() 
@@ -92,8 +92,8 @@ function closeNavPWCS()
 /*SCPS*/
 function openNavSCPS()
 {
-    document.getElementById("SCPS").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
+    document.getElementById("SCPS").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
 }
 
 function closeNavSCPS() 
@@ -105,8 +105,8 @@ function closeNavSCPS()
 /*VDSS*/
 function openNavVDSS()
 {
-    document.getElementById("VDSS").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
+    document.getElementById("VDSS").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
 }
 
 function closeNavVDSS() 
@@ -118,8 +118,8 @@ function closeNavVDSS()
 /*Labels*/
 function openNavLabels()
 {
-    document.getElementById("Labels").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
+    document.getElementById("Labels").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
 }
 
 function closeNavLabels() 
@@ -131,8 +131,8 @@ function closeNavLabels()
 /*Tools*/
 function openNavTools()
 {
-    document.getElementById("Tools").style.width = "300px";
-    document.getElementById("main").style.marginLeft = "300px";
+    document.getElementById("Tools").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
 }
 
 function closeNavTools() 
