@@ -5,14 +5,15 @@
     
 }
 
-body {
+body 
+{
     background-color: lightgray;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .fullScreenbtn 
-
 {
     display: block;
     position: fixed;
@@ -22,6 +23,19 @@ body {
     right: 0%;
     left: 95%;
     top: 1%;
+}
+/* .header 
+{
+   /* background-color:#cceebc; 
+} */
+
+.footer
+{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height:20%;
+    z-index: 1;
 }
 
 div
@@ -37,6 +51,7 @@ ul
 	list-style: none;
 	margin-bottom: 0px;
 }
+
 p
 {
 	font-family: 'Rubik', sans-serif;
@@ -49,26 +64,28 @@ p
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
 
-h1 {  
+h1 
+{  
     display: block;
-    border-radius: 0px 0px 90px 5px;
+    border-radius: 5px 5px 90px 90px;
     font-family: 'Montserrat', sans-serif;
     font-size:60px;
     /**background-color: rgb(127, 66, 170);**/
     color: #FFFFFF;
     text-align: left;
-    text-indent: 2%;
+    text-indent: 5%;
     position: fixed;
     z-index: 1;
-    width: 75%;
-    max-width: 80%;
+    width: 100%;
+    max-width: 100%;
     opacity:0.8;
     background-image: linear-gradient(to right,rgb(0, 147, 167), grey  );
-    margin: 10px;
-    left: 250px;
+    margin: 0;
+    float: left;
     /**border: 5px solid rgba(0, 128, 0, 0);**/
     /**border-bottom:25px solid grey;**/
 }
+
 .submenu
 {
 	display: block;
@@ -86,30 +103,37 @@ h1 {
     -o-transition: opacity 0.3s ease;
     transition: all 0.3s ease;
 }
-h5 {
+
+h5 
+{
     z-index: 1;
     position: relative;
     opacity: 0.9;
 }
 
-.buttonimage {
+.buttonimage 
+{
     right: 10px;
     position: relative;
     display: inline;
 
 }
     
-.dalywebsite {
+.dalywebsite 
+{
     z-index: 1;
     position: relative; 
 }
 
-.daly {
+.daly 
+{
     font-family: 'Poppins', sans-serif;
     color: rgb(204, 255, 110);
+    
 }
 
-.version {
+.version 
+{
     
     font-family: 'Poppins', sans-serif;
     font-size:10px;
@@ -118,26 +142,35 @@ h5 {
     position: relative;
     border-radius: 5px 50px 50px 5px;
     margin: 10px;
+    
 }  
 
-.customerabbr {
+.customerabbr 
+{
     color:rgb(0, 225, 255);
     font-weight: bold;
     display: inline;
     position: sticky;
 }
 
-.customeroptions {
+.customeroptions 
+{
     color: #cceebc;
-    font-weight: bold;
-    display: inline;
+    display: inline-block;
     position: sticky;
     font-size: 20px;
+    width: 80%;
+
 }
 
+.icon 
+{
+    display:inline-block;
+    position: sticky;
+}
 
-.customerName {
-
+.customerName 
+{
     display: block;
     position: sticky;
     left: 10px;
@@ -149,43 +182,41 @@ h5 {
     width: 90%;
 }
 
-nav {
+nav 
+{
     font-family: 'Dosis', sans-serif;
     font-size:20px;
     /**float: left;**/
     z-index: 1;
     position: relative;
     margin: 10px;
-    
-
 }
 
 .mainmenu
 {
-    
     display: block;
     position: relative;
-    width: 200px;
+    overflow: hidden;
 }
 
 .mainmenublock 
 
 {
-    overflow: auto;
+    overflow: scroll;
     display: block;
     position: relative;
     height: 80%;
-    z-index: 1;
-    top: 30px;
+    z-index: 2;
+    width: 100%;
+    top: 90px;
     
-   
 }
 
 
 li {
     list-style-type: none;
     letter-spacing: 3px;
-    z-index: 1;
+    z-index: 2;
     list-style-position:inside;
     border: 5px solid rgba(0, 128, 0, 0);
     width: 200px;
@@ -205,6 +236,7 @@ li a {
     font-weight: bolder;
     width: 95%;
     transition-duration: 0.4s;
+    z-index: 2:
 }
 
 .documentations 
@@ -249,16 +281,7 @@ a:active {
     background-color: green;
 }
 
-#back_to_camera {
-    background: rgba(255,255,255,.9);
-    clear: both;
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-}
+
 .fluid_container {
     bottom: 0;
     height: 100%;
@@ -268,51 +291,34 @@ a:active {
     top: 0;
     z-index: 0;
 }
-#camera_wrap_4 
+
+
+.camera_overlayer 
 {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    margin-bottom: 0!important;
-    position: fixed;
-    right: 0;
-    top: 0;
-}
-.camera_bar {
-    z-index: 2;
-}
-.camera_thumbs {
-    margin-top: -100px;
-    position: relative;
-    z-index: 4;
-}
-.camera_thumbs_cont {
-    border-radius: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-}
-.camera_overlayer {
     opacity: .1;
 }
 
 
 
 /**SIDE BAR**/
-.sidebar {
+.sidebar 
+{
     font-family: 'Dosis', sans-serif;
     height: 100%;
     width: 0 ;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgb(73, 73, 73);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    opacity:0.9;
+    opacity:.9;
     letter-spacing: 3px;
+    overflow: scroll;
 }
+
 
 .sidebar a 
 {
@@ -341,7 +347,8 @@ a:active {
     background-color: rgb(100, 100, 100);
 }
 
-.sidebar .closebtn {
+.sidebar .closebtn
+{
     position: absolute;
     top: 0;
     right: 25px;
@@ -369,4 +376,29 @@ a:active {
 #main {
     transition: margin-left .5s;
     padding: 16px;
+}
+
+/* width */
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track
+{
+    background: transparent;   
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb
+{
+    /*background: rgb(58, 75, 67);*/
+    background: rgba(0, 99, 112, 0.63);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+{
+    background: rgba(0, 99, 112, 0.63);
 }

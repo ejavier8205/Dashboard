@@ -279,47 +279,8 @@
 	margin-left: -4px;
 	position: absolute;
 }
-.camera_prev, .camera_next, .camera_commands {
-	cursor: pointer;
-	height: 40px;
-	margin-top: -20px;
-	position: fixed;
-	bottom: 5%;
-	width: 40px;
-	z-index: 4;
-}
-.camera_prev {
-	left: 0;
-}
-.camera_prev > span {
-	background: url(../images/camera_skins.png) no-repeat 0 0;
-	display: block;
-	height: 40px;
-	width: 40px;
-}
-.camera_next {
-	right: 0;
-}
-.camera_next > span {
-	background: url(../images/camera_skins.png) no-repeat -40px 0;
-	display: block;
-	height: 40px;
-	width: 40px;
-}
-.camera_commands {
-	right: 41px;
-}
-.camera_commands > .camera_play {
-	background: url(../images/camera_skins.png) no-repeat -80px 0;
-	height: 40px;
-	width: 40px;
-}
-.camera_commands > .camera_stop {
-	background: url(../images/camera_skins.png) no-repeat -120px 0;
-	display: block;
-	height: 40px;
-	width: 40px;
-}
+
+
 .camera_wrap .camera_pag .camera_pag_ul li {
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
