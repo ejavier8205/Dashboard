@@ -202,7 +202,6 @@ nav
 }
 
 .mainmenublock 
-
 {
     overflow: scroll;
     display: block;
@@ -210,12 +209,12 @@ nav
     height: 80%;
     z-index: 2;
     width: 100%;
-    top: 110px;
-    
+    top: 110px;    
 }
 
 
-li {
+li 
+{
     list-style-type: none;
     letter-spacing: 3px;
     z-index: 2;
@@ -227,7 +226,8 @@ li {
     padding: 0;
 }
 
-li a {
+li a 
+{
     
     display: block;
     padding: 10px;
@@ -238,7 +238,7 @@ li a {
     font-weight: bolder;
     width: 95%;
     transition-duration: 0.4s;
-    z-index: 2:
+    z-index: 2;
 }
 
 .documentations 
@@ -402,4 +402,55 @@ a:active {
 ::-webkit-scrollbar-thumb:hover
 {
     background: rgba(0, 99, 112, 0.63);
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar 
+{
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    
+    background-color: rgb(255, 115, 115); /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 10px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 28%; /* Center the snackbar */
+    top: 130px; /* 30px from the bottom */
+    font-family: 'Dosis';
+    font-size: 20px;
+    
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show 
+{
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+   However, delay the fade out process for 2.5 seconds */
+   -webkit-animation: fadein 1s, fadeout 1s 7s;
+   animation: fadein 1s, fadeout 1s 6.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 130px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 130px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 130px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 130px; opacity: 1;}
+    to {top: 0; opacity: 0;}
 }
