@@ -141,6 +141,18 @@ function closeNavTools()
     document.getElementById("main").style.marginLeft= "0";
 }
 
+/*Links*/
+function openNavLinks()
+{
+    document.getElementById("Links").style.width = "25%";
+    document.getElementById("main").style.marginLeft = "25%";
+}
+
+function closeNavLinks() 
+{
+    document.getElementById("Links").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
 /* Get the documentElement (<html>) to display the page in fullscreen */
 var elem = document.documentElement;
 
@@ -191,7 +203,8 @@ function toggleFullScreen() {
     }  
   }
 
-  function alertmessage() {
+  function alertmessage() 
+{
     // Get the snackbar DIV
     var x = document.getElementById("snackbar");
 
