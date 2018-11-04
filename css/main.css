@@ -37,7 +37,12 @@ h5 {
     opacity: 0.9;
 }
 
+.buttonimage {
+    right: 10px;
+    position: relative;
+    display: inline;
 
+}
     
 .dalywebsite {
     z-index: 1;
@@ -60,6 +65,21 @@ h5 {
     margin: 10px;
 }  
 
+.customerabbr {
+    color: #75b956;
+    font-weight: bold;
+    display: inline;
+    position: sticky;
+}
+
+
+
+.customerName {
+
+    display: block;
+    position: sticky;
+    left: 50px;
+}
 
 nav {
     font-family: 'Dosis', sans-serif;
@@ -80,7 +100,6 @@ li {
     width: 200px;
     transition: 0.3s;
     cursor: pointer;
-
 }
 
 li a {
@@ -94,10 +113,11 @@ li a {
     border-radius: 5px 50px 50px 5px;
 }
 
-div.documentations {
+.documentations {
     color: #111;
-    margin: 20px;
-    background-color: #75b956;   
+    margin: 0   ;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 a:link {
@@ -115,6 +135,7 @@ a:visited {
 a:hover {
     color:rgb(0, 0, 0);
     background-color: rgb(190, 214, 196);
+    font-weight: bolder;
 }
 
 a:active {
@@ -188,15 +209,15 @@ a:active {
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: #ffffff;
     display: block;
     transition-duration: 0.4s;
 }
 
 .sidebar a:hover {
-    color: #004b44;
-    background-color: aquamarine;
+    color: #000000;
+    background-color: rgb(100, 100, 100);
 }
 
 .sidebar .closebtn {
