@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="css/camera.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 
+    <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick.css">
+
     <script src="js/main.js"></script>
     <script type="text/javascript" src="scripts/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.mobile.customized.min.js"></script>
@@ -27,39 +33,184 @@
 
 <body>
     
-    <header>
+    <header class="header">
         <h1><span class="daly">Daly</span> Production Dashboard</h1>
+        <img type="buttonimage" class="fullScreenbtn"  onclick="toggleFullScreen()" src="images/fullscreen1.png">
         <small class="Version">Version 1.0</small>
        
     </header>
 
-    <nav>
-        <ul>
-            <li><a id="customers" onclick="openNav()"><img class="buttonimage" src="images/doubleArrow.png">Customers</a></li>
-            <li><a><img class="buttonimage" src="images/doubleArrow.png">Labels</a></li>
-            <li><a><img class="buttonimage" src="images/doubleArrow.png">Tools</a></li>
-        </ul>
-    </nav>
+    
+    <div class="mainmenublock">
+        <nav class="mainmenu">
+            <ul>
+                <li><a class="customerbutton" onclick="openNavAACPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">AACPS</span><span class="customerName">Anne Arundel Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavBCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">BCPS</span><span class="customerName">Baltimore City</span></a></li>
+                <li><a class="customerbutton" onclick="openNavBOEBCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">BOE-BCPS</span><span class="customerName">Baltimore Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavCCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">CCPS</span><span class="customerName">Charles Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavFCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">FCPS</span><span class="customerName">Frederick Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavLCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">LCPS</span><span class="customerName">Loudoun Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavPWCS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">PWCS</span><span class="customerName">Prince William Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavSCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">SCPS</span><span class="customerName">Stafford Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavVDSS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">VDSS</span><span class="customerName">Va. Social Servies</span></a></li>
+                <li><a class="dalybutton" onclick="openNavLabels()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Labels</span><span class="customerName">Production Labels</span></a></li>
+                <li><a class="dalybutton" onclick="openNavTools()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Tools</span><span class="customerName">Production Tools</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
 
-    <div id="mySidebar" class="sidebar">
-            <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
-            <div class="documentations">
-                <a>Customer's Documentations</a>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer"></div>
+
+    <div id="snackbar">Wait. Downloading File. Check taskbar if it dosent open right away. Have a nice work day.</div>
+
+    <div id="AACPS" class="sidebar">
+            <button href="javascript:void(0)" class="closebtn" onclick="closeNavAACPS()">×</button>
+            <div class="customerdocs">
+                <p>AACPS</p>
             </div>  
-            <a href="#"><span class="customerabbr">PWCS</span><span class="customerName">Prince William County</span></a>
-            <a href="#"><span class="customerabbr">AACPS</span><span class="customerName">Anne Arundel Co.</span></a>
-            <a href="#"><span class="customerabbr">BCPS</span><span class="customerName">Baltimore City</span></a>
-            <a href="#"><span class="customerabbr">BOE-BCPS</span><span class="customerName">Baltimore County</span></a>
-          </div>
+            <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\AACPS\IMAGING\AACPS IMAGING PROCESS SUMMARY.docx" ><span class="customeroptions">Windows Imaging</span><img class="icon" src="images/file.png"></a>
+            <a href="\\storage1\Prod\Quality Assurance\AACPS\ASSET TAGGING\" target="_blank"><span class="customeroptions">Asset Tagging</span><img class="icon" src="images/folder.png"></a>
+            <a onclick="alertmessage(), closeFullscreen()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\AACPS\AACPS LABEL.btw"><span class="customeroptions">Thermal Label</span><img class="icon" src="images/barcode1.png"></a>
+    </div>
+
+    <div id="BCPS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavBCPS()">×</button>
+        <div class="customerdocs">
+            <p>BCPS</p>
+        </div>  
+        <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\BCPS\IMAGING\BCPS IMAGING PROCESS SUMMARY.docx"><span class="customeroptions">Windows Imaging</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\BCPS\IMAGING\BCPS Chromebooks enrollment process.docx"><span class="customeroptions">Chromebook Enrollment</span><img class="icon" src="images/file.png"></a>
+        <a href="\\storage1\Prod\Quality Assurance\BCPS\ASSET TAGGING\" target="_blank"><span class="customeroptions">Asset Tagging</span><img class="icon" src="images/folder.png"></a>
+        <a href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\BCPS 21st CENTURY SCHOOLS\" target="_blank"><span class="customeroptions">Thermal LabelS</span><img class="icon" src="images/folder.png"></a>
+    </div>
+    </div>
+
+    <div id="BOEBCPS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavBOEBCPS()">×</button>
+        <div class="customerdocs">
+            <p>BOE-BCPS</p>
+        </div>  
+        <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\BOE-BCPS\IMAGING\BOE-BCPS IMAGING PROCESS SUMMARY.docx"><span class="customeroptions">Windows Imaging</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\BOE-BCPS LABELS\BCPS LABEL (SILVER).btw"><span class="customeroptions">Thermal Label (SILVER)</span><img class="icon" src="images/barcode1.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\BOE-BCPS LABELS\BCPS LABEL (WHITE).btw"><span class="customeroptions">Thermal Label (WHITE)</span><img class="icon" src="images/barcode1.png"></a>
+    </div>
+
+    <div id="CCPS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavCCPS()">×</button>
+        <div class="customerdocs">
+            <p>CCPS</p>
+        </div>  
+        <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\CCPS\IMAGING\CCPS IMAGING PROCESS SUMMARY.docx"><span class="customeroptions">Windows Imaging</span><img class="icon" src="images/file.png"></a>
+    </div>
+
+    <div id="FCPS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavFCPS()">×</button>
+        <div class="customerdocs">
+            <p>FCPS</p>
+        </div>  
+        <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\FCPS\FCPS Chromebooks enrollment process.docx"><span class="customeroptions">Chromebook Enrollment</span><img class="icon" src="images/file.png"></a>
+    </div>
+
+    <div id="LCPS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavLCPS()">×</button>
+        <div class="customerdocs">
+            <p>LCPS</p>
+        </div>  
+        <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\LCPS\IMAGING AND PROVISIONING\Daly LCPS Configuration Process V2.docx"><span class="customeroptions">Windows Imaging</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\LCPS\IMAGING AND PROVISIONING\LCPS Chromebooks enrollment process.docx"><span class="customeroptions">Chromebook Enrollment</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\LCPS\IMAGING AND PROVISIONING\LCPS iPad Enrollment Process.docx"><span class="customeroptions">IPad Enrollment</span><img class="icon" src="images/file.png"></a>
+        <a href="\\storage1\Prod\Quality Assurance\LCPS\ASSET TAGGING\" target="_blank"><span class="customeroptions">Asset Tagging</span><img class="icon" src="images/folder.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\LCPS Thermal Labels\LCPS - Lenovo P320 Tiny - W.Barcode.btw"><span class="customeroptions">Thermal Label (P320)</span><img class="icon" src="images/barcode1.png"></a>
+    </div>
+
+    <div id="PWCS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavPWCS()">×</button>
+        <div class="customerdocs">
+            <p>PWCS</p>
+        </div>  
+        <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\PWCS\IMAGING\PWCS IMAGING PROCESS SUMMARY.docx"><span class="customeroptions">Windows Imaging</span><img class="icon" src="images/file.png"></a>
+        <a href="\\storage1\Prod\Quality Assurance\PWCS\ASSET TAGGING\" target="_blank"><span class="customeroptions">Asset Tagging</span><img class="icon" src="images/folder.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\PRINCE WILLIAM\Prince William - 2018.btw"><span class="customeroptions">Thermal Label</span><img class="icon" src="images/barcode1.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\PRINCE WILLIAM\Prince William - 2018 No Barcode.btw"><span class="customeroptions">Thermal Label (No Barcode)</span><img class="icon" src="images/barcode1.png"></a>
+    </div>
+
+    <div id="SCPS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavSCPS()">×</button>
+        <div class="customerdocs">
+            <p>SCPS</p>
+        </div>  
+        <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\SCPS\Chromebook Enrollment\SCPS Chromebooks enrollment PROCESS.docx"><span class="customeroptions">Chromebook Enrollment</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\STAFFORD COUNTY LABELS\STAFFORD LABEL ( SILVER ) W.PO no date.btw"><span class="customeroptions">Thermal Label</span><img class="icon" src="images/barcode1.png"></a>
+    </div>
+
+    <div id="VDSS" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavVDSS()">×</button>
+        <div class="customerdocs">
+            <p>VDSS</p>
+        </div>  
+        <a href="\\storage1\Prod\Quality Assurance\VDSS\ASSET TAGGING\" target="_blank"><span class="customeroptions">Asset Tagging</span><img class="icon" src="images/folder.png"></a>
+    </div>
+
+    <div id="Labels" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavLabels()">×</button>
+        <div class="Dalydocs">
+            <p>Labels</p>
+        </div>  
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Labels\Shipping Label.dotx"><span class="customeroptions">Shipping Labels</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Labels\Cart Numbers.dotx"><span class="customeroptions">Cart Numbers</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Labels\Cart Letter-Numbers.dotx"><span class="customeroptions">Cart Letter-Number</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Labels\PC Cart ID.dotx"><span class="customeroptions">PC Cart ID</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Labels\Refresh Label.dotx"><span class="customeroptions">Refresh Label</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Labels\Staging Signs.dotx"><span class="customeroptions">Staging Sign</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Labels\IN PROGRESS SIGN.dotx"><span class="customeroptions">In Progress Sign</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Labels\WAITING FOR PRODUCT SIGN.dotx"><span class="customeroptions">W.F.P. Sign</span><img class="icon" src="images/file.png"></a>
+    </div>
+
+    <div id="Tools" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavTools()">×</button>
+        <div class="Dalydocs">
+            <p>Tools</p>
+        </div>  
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\ASSETS\SCANS Dashboard.xltm"><span class="customeroptions">Scan Dashboard</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SCANS\New SCAN.xltm"><span class="customeroptions">New Scan</span><img class="icon" src="images/file.png"></a>
+    </div>
+
+    <div id="Links" class="sidebar">
+            <button href="javascript:void(0)" class="closebtn" onclick="closeNavLinks()">×</button>
+            <div class="Weblinks">
+                <p>Web Links</p>
+            </div>  
+            <a href="#" target="_blank"><span class="customeroptions">Daly Website</span><img class="icon" src="images/file.png"></a>
+            <a href="#" target="_blank"><span class="customeroptions">Daly IMS</span><img class="icon" src="images/folder.png"></a>
+            <a href="#" target="_blank"><span class="customeroptions">Daly Intrenet</span><img class="icon" src="images/barcode1.png"></a>
+            <a href="#" target="_blank"><span class="customeroptions">Dalybase</span><img class="icon" src="images/barcode1.png"></a>
+    </div>
 
     <div class="fluid_container">
-        <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
-         <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/bridge.jpg"></div>
-         <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg"></div>
-         <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/road.jpg"></div>
-         <div data-thumb="images/slides/thumbs/sea.jpg" data-src="images/slides/sea.jpg"></div>
-         <div data-thumb="images/slides/thumbs/shelter.jpg" data-src="images/slides/shelter.jpg"></div>
-         <div data-thumb="images/slides/thumbs/tree.jpg" data-src="images/slides/tree.jpg"></div>
+        <div class="camera_wrapcamera_embosspattern_1" id="camera_wrap_4">
+        <div class="slide" data-src="images/slides/slide1.png"></div>
+        <div class="slide" data-src="images/slides/slide2.png"></div>
+        <div class="slide" data-src="images/slides/slide3.png"></div>
+        <div class="slide" data-src="images/slides/slide4.png"></div>
+        <div class="slide" data-src="images/slides/slide5.png"></div>
+        <div class="slide" data-src="images/slides/slide6.png"></div>
     </div>
 
 </body>
