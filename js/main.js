@@ -1,5 +1,11 @@
 
 
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+
+window.onload = timedRefresh(1800000000);
+
 /*AACPS*/
 function openNavAACPS()
 {
@@ -171,11 +177,12 @@ function CloseMainMenu()
     document.getElementById("main").style.marginLeft= "0";
 }
 
-setTimeout(automaticlose, 30000);
+
+setTimeout(automaticlose, 60000);
 
 function automaticlose()
 {
-    var t = setTimeout(automaticlose, 30000);
+    var t = setTimeout(automaticlose, 60000);
     document.getElementById("mainMenuDiv").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
@@ -183,6 +190,11 @@ function automaticlose()
 function resettimeout()
 {
     clearTimeout(t);
+}
+
+function restarttimeout()
+{
+    setTimeout(automaticlose, 60000);
 }
 
 

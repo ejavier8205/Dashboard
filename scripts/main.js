@@ -10,4 +10,7 @@ jQuery(function(){
 		imagePath: '../images/'
 	});
 
+
+
+
 });
