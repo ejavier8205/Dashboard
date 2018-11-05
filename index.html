@@ -35,15 +35,15 @@
     
     <header>
         <h1><span class="daly">Daly</span> Production Dashboard</h1>
-        <div class="fullScreenbtn">
-            <img type="buttonimage"   onclick="toggleFullScreen()" src="images/fullscreen1.png">
-        </div>
+            <!--<button class="fullScreenbtn" onclick="toggleFullScreen()"><img src="images/fullscreen1.png"></button>-->
         <small class="Version">Version 1.0</small>
+        <a onclick="openMainMenu(); automaticlose(); resettimeout()" class="openMenubtn"><img class="buttonimage" src="images/doubleArrow2.png"></a>
        
     </header>
     <div class="headerDiv"></div>
     
-    <div class="mainmenublock">
+    <div id="mainMenuDiv" class="mainmenublock">
+            <button href="javascript:void(0)" class="closebtn" onclick="CloseMainMenu()">×</button>
         <nav class="mainmenu">
             <ul>
                 <li><a class="customerbutton" onclick="openNavAACPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">AACPS</span><span class="customerName">Anne Arundel Co.</span></a></li>
