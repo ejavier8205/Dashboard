@@ -140,7 +140,6 @@ h5
 
 .buttonimage 
 {
-    right: 10px;
     position: relative;
     display: inline;
 
@@ -174,10 +173,12 @@ h5
 
 .customerabbr 
 {
-    color:rgb(0, 225, 255);
+    color:#dddddd;
     font-weight: bold;
     display: inline;
     position: sticky;
+    padding-left: 20px;
+    font-size: 25px;
 }
 
 .customeroptions 
@@ -186,7 +187,7 @@ h5
     color: #cceebc;
     display: inline-block;
     position: sticky;
-    font-size: 25px;
+    font-size: 20px;
     width: 80%;
 
 }
@@ -203,11 +204,12 @@ h5
     position: sticky;
     left: 10px;
     font-size: 15px;
-    background-color: rgb(124, 124, 124);
     border-radius: 5px 50px 50px 5px;
-    color: #ffffff;
+    color:#dddddd;
     padding: 0;
-    width: 90%;
+    width: 95%;
+    text-indent: 35px;
+    background-image: linear-gradient(to right,rgb(0, 147, 167),rgb(52, 94, 121),rgb(121, 52, 117),rgb(76, 52, 121) );
 }
 
 nav 
@@ -252,15 +254,14 @@ nav
 {
     display: block;
     position: relative;
-    padding: 10px;
     float: left;
-    opacity: 1; 
+    opacity: 0.5; 
     width: 95%;    
     z-index: 5;
     cursor: pointer;  
     width: fit-content;
-    left: 10px;
-
+    left: 30px;
+    background-color: #cceebc;
 }
 
 
@@ -268,6 +269,7 @@ nav
 .openMenubtn:hover 
 {
  cursor: pointer;
+ opacity: 1; 
 
 }
 
@@ -277,7 +279,6 @@ li
     letter-spacing: 3px;
     z-index: 2;
     list-style-position:inside;
-    border: 5px solid rgba(0, 128, 0, 0);
     width: 300px;
     transition: 0.3s;
     cursor: pointer;
@@ -285,15 +286,17 @@ li
 
 li a 
 {
-    
     display: block;
-    padding: 10px;
-    text-indent: 10%;
-    opacity: 0.9%;
+    opacity: 0.9;
     border-radius: 5px 50px 50px 5px;
     font-weight: bolder;    
-    width: 95%;    
+    width: 100%;    
     z-index: 2;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-width: 20px;
+    border-style: white 255;
 }
 
 .customerbutton
@@ -310,7 +313,7 @@ li a
 
 .dalybutton
 {
-    background-color: rgb(121, 52, 117);
+    background-color: rgb(100, 34, 97);
     opacity: .7;
 }
 
@@ -333,20 +336,12 @@ li a
 }
 .customerdocs
 {
-    color: #111;
-    padding: 0;
-    margin: 1;
+    font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
-    font-weight: bolder;
-    display: block;
-    text-align: center;
+    text-align: left;
     position: relative;
-    width: 250px;
-    top: 0px;
-    left: 20px;
+    width: 100%;
     background-color: rgb(121, 52, 52);
-    border-radius: 50px 50px 50px 50px;
-    
 }
 
 
@@ -391,7 +386,7 @@ li a
 
 .sidebar a 
 {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     color: #ffffff;
     display: block;
