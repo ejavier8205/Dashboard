@@ -141,14 +141,22 @@ h5
 .buttonimage 
 {
     position: relative;
-    display: inline;
+    display: inline-block;
+    left:10px;
 
+}
+
+.menubuttonimage
+{
+    position: relative;
+    display: inline-block;  
 }
     
 .dalywebsite 
 {
     z-index: 1;
-    position: relative; 
+    position: relative;
+    left: 10px; 
 }
 
 .daly 
@@ -184,7 +192,7 @@ h5
 .customeroptions 
 
 {
-    color: #cceebc;
+    color:#dddddd;
     display: inline-block;
     position: sticky;
     font-size: 20px;
@@ -282,6 +290,8 @@ li
     width: 300px;
     transition: 0.3s;
     cursor: pointer;
+    border-top: 10px solid rgba(0, 128, 0, 0);
+    border-bottom: 10px solid rgba(0, 128, 0, 0);
 }
 
 li a 
@@ -295,7 +305,7 @@ li a
     padding-top: 10px;
     padding-right: 20px;
     padding-bottom: 10px;
-    border: 5px solid rgba(0, 128, 0, 0);
+
 }
 
 .customerbutton
@@ -338,9 +348,11 @@ li a
     font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
     text-align: left;
+    text-indent: 10px;
     position: relative;
     width: 100%;
-    background-color: rgb(121, 52, 52);
+    color:#dddddd;
+    background-image: linear-gradient(to right,rgb(0, 147, 167),rgb(52, 94, 121),rgb(121, 52, 117),rgb(76, 52, 121) );
 }
 
 
