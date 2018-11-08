@@ -1,0 +1,552 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body 
+{
+    background-color: purple;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/**
+.fullScreenbtn 
+{
+    display: block;
+    position: absolute;
+    left: 10%;
+    right: 90%;
+    width: auto;
+    background-color: #cceebc;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+**/
+
+.openMenubtn
+{
+    display: inline-block;
+    position: relative;
+    opacity: 0.5; 
+    width: 80px;  
+    height: 80px; 
+    z-index: 0;
+    cursor: pointer;  
+    left: 60px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px;
+    top: 30px;
+    transition: 0.5s;
+
+}
+
+.openMenubtn:hover 
+{
+ cursor: pointer;
+ opacity: 1;
+ background-color: rgba(255, 0, 200, 0.26);
+ transition: 0.5s;
+
+}
+
+
+.overlay2
+{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    text-align: center;
+
+}
+
+.footer
+{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height:20px;
+    z-index: 1;
+    text-align: center;
+ 
+}
+
+
+div
+{
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul
+{
+	list-style: none;
+	margin-bottom: 0px;
+}
+
+p
+{
+	font-family: 'Rubik', sans-serif;
+	font-size: initial;
+	line-height: 1.7;
+	font-weight: 400;
+	color: #828282;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+h1 
+{  
+    
+    
+    /**background-color: rgb(127, 66, 170);**/
+    color: #FFFFFF;
+    text-align: right;
+    -ms-text-size-adjust: auto;
+    border-radius: 5px 5px 90px 90px;
+    height: 5vw;
+    padding: 10px;
+    font-size: 3vw;
+    text-align: center;
+    width: 80%;
+    z-index: 1;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    opacity:0.8;
+    background-image: linear-gradient(to right,rgb(0, 147, 167),rgb(52, 94, 121),rgb(121, 52, 117),rgb(76, 52, 121) );
+
+    
+  
+
+}
+
+header
+{
+
+    display: block;
+    height: 5vw;
+    z-index: 1;
+    position: relative;
+
+
+}
+
+.submenu
+{
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	min-width: 100%;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+	-webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+h5 
+{
+    z-index: 1;
+    position: relative;
+    opacity: 0.9;
+}
+
+.buttonimage 
+{
+    position: relative;
+    display: inline-block;
+    left:10px;
+}
+   
+.dalywebsite 
+{
+    z-index: 1;
+    position: relative;
+    left: 10px; 
+}
+
+.daly 
+{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(204, 255, 110);
+    
+}
+
+.version 
+{
+    
+    font-family: 'Poppins', sans-serif;
+    font-size:10px;
+    color:rgb(194, 194, 194);
+    z-index: 1;
+    position: relative;
+    border-radius: 5px 50px 50px 5px;
+    margin: 10px;
+    
+}  
+
+.customerabbr 
+{
+    color:#dddddd;
+    font-weight: bold;
+    display: inline;
+    position: sticky;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+.customeroptions 
+
+{
+    color:#dddddd;
+    display: inline-block;
+    position: sticky;
+    font-size: 20px;
+    width: 80%;
+
+}
+
+.icon 
+{
+    display:inline-block;
+    position: sticky;
+}
+
+.customerName 
+{
+    display: block;
+    position: sticky;
+    left: 10px;
+    font-size: 15px;
+    border-radius: 5px 50px 50px 5px;
+    color:#dddddd;
+    padding: 0;
+    width: 95%;
+    text-indent: 35px;
+    background-image: linear-gradient(to right,rgb(0, 147, 167),rgb(52, 94, 121),rgb(121, 52, 117),rgb(76, 52, 121) );
+}
+
+nav 
+{
+    font-family: 'Dosis', sans-serif;
+    font-size:20px;
+    /**float: left;**/
+    z-index: 3;
+    position: relative;
+    margin: 10px;
+}
+
+.mainmenu
+{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.mainmenublock 
+{
+    font-family: 'Dosis', sans-serif;
+    height: 100%;
+    width: 0 ;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgb(73, 73, 73);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+    letter-spacing: 3px;
+    overflow: auto;
+}
+
+
+
+
+li 
+{
+    list-style-type: none;
+    letter-spacing: 3px;
+    z-index: 2;
+    list-style-position:inside;
+    width: 300px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-top: 10px solid rgba(0, 128, 0, 0);
+    border-bottom: 10px solid rgba(0, 128, 0, 0);
+}
+
+li a 
+{
+    display: block;
+    opacity: 0.9;
+    border-radius: 5px 50px 50px 5px;
+    font-weight: bolder;    
+    width: 100%;    
+    z-index: 2;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+}
+
+.customerbutton
+{
+    background-color: rgb(52, 94, 121);
+    opacity: .7;
+}
+
+.customerbutton:hover
+{
+    opacity: 1;
+    font-weight: bolder;
+}
+
+.dalybutton
+{
+    background-color: rgb(100, 34, 97);
+    opacity: .7;
+}
+
+.dalybutton:hover
+{
+    opacity: 1;
+    font-weight: bolder;
+}
+
+.dalylinks
+{
+    background-color: rgb(76, 52, 121);
+    opacity: .7;    
+}
+
+.dalylinks:hover
+{
+    opacity: 1;
+    font-weight: bolder;
+}
+.customerdocs
+{
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    text-indent: 10px;
+    position: relative;
+    width: 100%;
+    color:#dddddd;
+    background-image: linear-gradient(to right,rgb(0, 147, 167),rgb(52, 94, 121),rgb(121, 52, 117),rgb(76, 52, 121) );
+}
+
+
+
+.fluid_container {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+.camera_overlayer 
+{
+    opacity: .1;
+}
+
+
+
+/**SIDE BAR**/
+.sidebar 
+{
+    font-family: 'Dosis', sans-serif;
+    height: 100%;
+    width: 0 ;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgb(73, 73, 73);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity:.9;
+    letter-spacing: 3px;
+    overflow: auto;
+}
+
+
+.sidebar a 
+{
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition-duration: 0.4s;    
+}
+
+.sidebar p
+{
+
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    display: block;
+    transition-duration: 0.4s;
+
+}
+
+.sidebar a:hover 
+{
+    color: #000000;
+    background-color: rgb(100, 100, 100);
+}
+
+.sidebar .closebtn
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: transparent;
+    color: cadetblue;
+    border: 0;
+    opacity:0.9;
+}
+
+.mainmenublock .closebtn
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: transparent;
+    color: cadetblue;
+    border: 0;
+    opacity:0.9;  
+}
+
+
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/* width */
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track
+{
+    background: transparent;   
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb
+{
+    /*background: rgb(58, 75, 67);*/
+    background: rgba(0, 99, 112, 0.63);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+{
+    background: rgba(0, 99, 112, 0.63);
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar 
+{
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    
+    background-color: rgb(255, 115, 115); /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 10px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 28%; /* Center the snackbar */
+    top: 130px; /* 30px from the bottom */
+    font-family: 'Dosis';
+    font-size: 20px;
+    
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show 
+{
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+   However, delay the fade out process for 2.5 seconds */
+   -webkit-animation: fadein 1s, fadeout 1s 7s;
+   animation: fadein 1s, fadeout 1s 6.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 130px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 130px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 130px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 130px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+.slide
+{
+    widows: 100%;
+    height: auto;
+}
+
+.camera_wrap_4
+{
+    widows: 100%;
+    height: auto
+}
+
+.camera_wrapcamera_embosspattern_1
+{
+    widows: 100%;
+    height: auto
+}
+

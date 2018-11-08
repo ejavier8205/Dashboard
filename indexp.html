@@ -32,12 +32,15 @@
 </head>
 
 <body>
+    
     <header>
         <h1><span class="daly">Daly</span> Production Dashboard</h1>
             <!--<button class="fullScreenbtn" onclick="toggleFullScreen()"><img src="images/fullscreen1.png"></button>-->
-        <button onclick="openMainMenu(); automaticlose(); resettimeout()" class="openMenubtn"><img src="images/menubtn.png"></button>
+        <small class="Version">Version 1.0</small>
+        <a onclick="openMainMenu(); automaticlose(); resettimeout()" class="openMenubtn"><img class="buttonimage" src="images/doubleArrow2.png"></a>
+       
     </header>
-    <div class="overlay2"></div>
+    <div class="headerDiv"></div>
     
     <div id="mainMenuDiv" class="mainmenublock">
             <button href="javascript:void(0)" class="closebtn" onclick="CloseMainMenu()">×</button>
@@ -55,6 +58,7 @@
                 <li><a class="dalybutton" onclick="openNavLabels()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Labels</span><span class="customerName">Production Labels</span></a></li>
                 <li><a class="dalybutton" onclick="openNavTools()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Tools</span><span class="customerName">Production Tools</span></a></li>
                 <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+
                 <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
                 <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
                 <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
@@ -80,8 +84,8 @@
 
     <div id="AACPS" class="sidebar">
             <button href="javascript:void(0)" class="closebtn" onclick="closeNavAACPS()">×</button>
-            <div>
-                <p class="customerdocs">AACPS</p>
+            <div class="customerdocs">
+                <p>AACPS</p>
             </div>  
             <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\AACPS\IMAGING\AACPS IMAGING PROCESS SUMMARY.docx" ><span class="customeroptions">Windows Imaging</span><img class="icon" src="images/file.png"></a>
             <a href="\\storage1\Prod\Quality Assurance\AACPS\ASSET TAGGING\" target="_blank"><span class="customeroptions">Asset Tagging</span><img class="icon" src="images/folder.png"></a>
@@ -203,12 +207,12 @@
 
     <div class="fluid_container">
         <div class="camera_wrapcamera_embosspattern_1" id="camera_wrap_4">
-        <div class="slide" data-src="images/slides/slide1.png"></div>
-        <div class="slide" data-src="images/slides/slide2.png"></div>
-        <div class="slide" data-src="images/slides/slide3.png"></div>
-        <div class="slide" data-src="images/slides/slide4.png"></div>
-        <div class="slide" data-src="images/slides/slide5.png"></div>
-        <div class="slide" data-src="images/slides/slide6.png"></div>
+        <div class="slide" data-src="images/slides/slide1p.png"></div>
+        <div class="slide" data-src="images/slides/slide2p.png"></div>
+        <div class="slide" data-src="images/slides/slide3p.png"></div>
+        <div class="slide" data-src="images/slides/slide4p.png"></div>
+        <div class="slide" data-src="images/slides/slide5p.png"></div>
+        <div class="slide" data-src="images/slides/slide6p.png"></div>
     </div>
 
 </body>
