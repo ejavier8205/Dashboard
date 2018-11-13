@@ -122,11 +122,7 @@ div
     box-sizing: border-box;
 }
 
-ul
-{
-	list-style: none;
-	margin-bottom: 0px;
-}
+
 
 p
 {
@@ -609,4 +605,6 @@ li a
     widows: 100%;
     height: auto
 }
+
+/*Clock*/
 
