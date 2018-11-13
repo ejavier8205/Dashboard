@@ -379,6 +379,7 @@ li a
     opacity: 1;
     font-weight: bolder;
 }
+
 .customerdocs
 {
     font-family: 'Dosis', sans-serif;
@@ -390,6 +391,31 @@ li a
     color:#dddddd;
     background-image: linear-gradient(to right,rgb(0, 147, 167),rgb(52, 94, 121),rgb(121, 52, 117),rgb(76, 52, 121) );
 }
+
+.Dalydocs
+{
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    text-indent: 10px;
+    position: relative;
+    width: 100%;
+    color:#dddddd;
+    background-image: linear-gradient(to right,rgb(0, 147, 167),rgb(52, 94, 121),rgb(121, 52, 117),rgb(76, 52, 121) );
+}
+
+.Weblinks
+{
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    text-indent: 10px;
+    position: relative;
+    width: 100%;
+    color:#dddddd;
+    background-image: linear-gradient(to right,rgb(0, 147, 167),rgb(52, 94, 121),rgb(121, 52, 117),rgb(76, 52, 121) );
+}
+
 
 
 
