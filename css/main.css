@@ -13,21 +13,24 @@ body
     overflow: hidden;
 }
 
-/**
+
 .fullScreenbtn 
 {
     display: block;
-    position: absolute;
-    left: 10%;
-    right: 90%;
-    width: auto;
-    background-color: #cceebc;
-    margin: 0;
-    padding: 0;
+    position: fixed;
+    background-color: #cceebc00;
+    border-color: rgba(127, 255, 212, 0);
     z-index: 1;
+    right: 100px;
+    top: 20px;
+    opacity: .7;
 }
-**/
 
+.fullScreenbtn:hover
+{
+    opacity: 1;
+    cursor: pointer;
+}
 .openMenubtn
 {
     display: inline-block;
