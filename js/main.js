@@ -57,7 +57,8 @@ function closeNavCCPS()
     document.getElementById("CCPS").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
-/*FaCPS*/
+
+/*FACPS*/
 function openNavFACPS()
 {
     document.getElementById("FACPS").style.width = "400px";
