@@ -35,28 +35,29 @@
 <body>
     <header>
         <h1><span class="daly">Daly</span> Production Dashboard</h1><button class="fullScreenbtn" onclick="toggleFullScreen()"><img src="images/fullscreen1.png"></button>
-        <button id="openmenuid" onclick="openMainMenu(); automaticlose(); resettimeout();" class="openMenubtn"><img src="images/menubtn.png"></button>
+        <button id="openmenuid" onclick="openMainMenu();" class="openMenubtn"><img src="images/menubtn.png"></button>
     </header>
     <div class="overlay2"></div>
 
     
     
-    <div id="mainMenuDiv" class="mainmenublock">
+    <div id="mainMenuDiv" class="mainmenublock" onmouseover="resetTimeout()" onmouseleave="automaticlose()">
             <button href="javascript:void(0)" class="closebtn" onclick="CloseMainMenu()">×</button>
-        <nav class="mainmenu">
+        <nav class="mainmenu" onmouseover="resetTimeout()" onmouseleave="automaticlose()">
             <ul>
-                <li><a class="customerbutton" onclick="openNavAACPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">AACPS</span><span class="customerName">Anne Arundel Co.</span></a></li>
-                <li><a class="customerbutton" onclick="openNavBCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">BCPS</span><span class="customerName">Baltimore City</span></a></li>
-                <li><a class="customerbutton" onclick="openNavBOEBCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">BOE-BCPS</span><span class="customerName">Baltimore Co.</span></a></li>
-                <li><a class="customerbutton" onclick="openNavCCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">CCPS</span><span class="customerName">Charles Co.</span></a></li>
-                <li><a class="customerbutton" onclick="openNavFCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">FCPS</span><span class="customerName">Frederick Co.</span></a></li>
-                <li><a class="customerbutton" onclick="openNavLCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">LCPS</span><span class="customerName">Loudoun Co.</span></a></li>
-                <li><a class="customerbutton" onclick="openNavPWCS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">PWCS</span><span class="customerName">Prince William Co.</span></a></li>
-                <li><a class="customerbutton" onclick="openNavSCPS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">SCPS</span><span class="customerName">Stafford Co.</span></a></li>
-                <li><a class="customerbutton" onclick="openNavVDSS()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">VDSS</span><span class="customerName">Va. Social Servies</span></a></li>
-                <li><a class="dalybutton" onclick="openNavLabels()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Labels</span><span class="customerName">Production Labels</span></a></li>
-                <li><a class="dalybutton" onclick="openNavTools()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Tools</span><span class="customerName">Production Tools</span></a></li>
-                <li><a class="dalylinks" onclick="openNavLinks()"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
+                <li><a class="customerbutton" onclick="openNavAACPS(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">AACPS</span><span class="customerName">Anne Arundel Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavBCPS(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">BCPS</span><span class="customerName">Baltimore City</span></a></li>
+                <li><a class="customerbutton" onclick="openNavBOEBCPS(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">BOE-BCPS</span><span class="customerName">Baltimore Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavCCPS();"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">CCPS</span><span class="customerName">Charles Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavFCPS(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">FCPS</span><span class="customerName">Frederick Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavFACPS(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">FaCPS</span><span class="customerName">Fauquier Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavLCPS(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">LCPS</span><span class="customerName">Loudoun Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavPWCS(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">PWCS</span><span class="customerName">Prince William Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavSCPS(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">SCPS</span><span class="customerName">Stafford Co.</span></a></li>
+                <li><a class="customerbutton" onclick="openNavVDSS(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">VDSS</span><span class="customerName">Va. Social Servies</span></a></li>
+                <li><a class="dalybutton" onclick="openNavLabels(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Labels</span><span class="customerName">Production Labels</span></a></li>
+                <li><a class="dalybutton" onclick="openNavTools();"><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Tools</span><span class="customerName">Production Tools</span></a></li>
+                <li><a class="dalylinks" onclick="openNavLinks(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">Links</span><span class="customerName">Web Links</span></a></li>
            
             </ul>
         </nav>
@@ -73,7 +74,7 @@
             </div>  
             <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\AACPS\IMAGING\AACPS IMAGING PROCESS SUMMARY.docx" ><span class="customeroptions">Windows Imaging</span><img class="icon" src="images/file.png"></a>
             <a href="\\storage1\Prod\Quality Assurance\AACPS\ASSET TAGGING\" target="_blank"><span class="customeroptions">Asset Tagging</span><img class="icon" src="images/folder.png"></a>
-            <a onclick="alertmessage(), closeFullscreen()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\AACPS\AACPS LABEL.btw"><span class="customeroptions">Thermal Label</span><img class="icon" src="images/barcode1.png"></a>
+            <a onclick="alertmessage();" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\AACPS\AACPS LABEL.btw"><span class="customeroptions">Thermal Label</span><img class="icon" src="images/barcode1.png"></a>
     </div>
 
     <div id="BCPS" class="sidebar">
@@ -85,9 +86,9 @@
         <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\BCPS\IMAGING\BCPS Chromebooks enrollment process.docx"><span class="customeroptions">Chromebook Enrollment</span><img class="icon" src="images/file.png"></a>
         <a href="\\storage1\Prod\Quality Assurance\BCPS\POST-CONFIGURATION\" target="_blank"><span class="customeroptions">Chromebook Barcodes</span><img class="icon" src="images/folder.png"></a>
         <a href="\\storage1\Prod\Quality Assurance\BCPS\ASSET TAGGING\" target="_blank"><span class="customeroptions">Asset Tagging</span><img class="icon" src="images/folder.png"></a>
-        <a href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\BCPS 21st CENTURY SCHOOLS\" target="_blank"><span class="customeroptions">Thermal LabelS</span><img class="icon" src="images/folder.png"></a>
+        <a href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\BCPS 21st CENTURY SCHOOL\" target="_blank"><span class="customeroptions">Thermal LabelS</span><img class="icon" src="images/folder.png"></a>
     </div>
-    </div>
+    
 
     <div id="BOEBCPS" class="sidebar">
         <button href="javascript:void(0)" class="closebtn" onclick="closeNavBOEBCPS()">×</button>
@@ -109,6 +110,14 @@
 
     <div id="FCPS" class="sidebar">
         <button href="javascript:void(0)" class="closebtn" onclick="closeNavFCPS()">×</button>
+        <div class="customerdocs">
+            <p><a href="\\STORAGE1\Prod\Quality Assurance\FCPS\" target="_blank">FCPS</a></p>
+        </div>  
+        <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\FCPS\FCPS Chromebooks enrollment process.docx"><span class="customeroptions">Chromebook Enrollment</span><img class="icon" src="images/file.png"></a>
+    </div>
+
+    <div id="FACPS." class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNavFACPS()">×</button>
         <div class="customerdocs">
             <p><a href="\\STORAGE1\Prod\Quality Assurance\FCPS\" target="_blank">FCPS</a></p>
         </div>  
@@ -144,7 +153,7 @@
             <p><a href="\\STORAGE1\Prod\Quality Assurance\SCPS\" target="_blank">SCPS</a></p>
         </div>  
         <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\SCPS\Chromebook Enrollment\SCPS Chromebooks enrollment PROCESS.docx"><span class="customeroptions">Chromebook Enrollment</span><img class="icon" src="images/file.png"></a>
-        <a href="\\storage1\Prod\Quality Assurance\SCPS\Chromebook Enrollment\SCPS Schools Chromebook Enrollment BARCODES\"><span class="customeroptions">Chromebook Barcodes</span><img class="icon" src="images/folder.png"></a>
+        <a href="\\storage1\Prod\Quality Assurance\SCPS\Chromebook Enrollment\SCPS Schools Chromebook Enrollment BARCODES\" target="_blank"><span class="customeroptions">Chromebook Barcodes</span><img class="icon" src="images/folder.png"></a>
         <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\STAFFORD COUNTY LABELS\STAFFORD LABEL ( SILVER ) W.PO no date.btw"><span class="customeroptions">Thermal Label</span><img class="icon" src="images/barcode1.png"></a>
     </div>
 
@@ -178,6 +187,7 @@
         </div>  
         <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\ASSETS\SCANS Dashboard.xltm"><span class="customeroptions">Scan Dashboard</span><img class="icon" src="images/file.png"></a>
         <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SCANS\New SCAN.xltm"><span class="customeroptions">New Scan</span><img class="icon" src="images/file.png"></a>
+        <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\GUIDES\Scanner Guides\CS3070 BLUETOOTH SCANNER PAIRING INSTRUCTIONS.pdf" target="_blank"><span class="customeroptions">CS3070 Pairing</span><img class="icon" src="images/file.png"></a>
     </div>
 
     <div id="Links" class="sidebar">

@@ -57,6 +57,18 @@ function closeNavCCPS()
     document.getElementById("CCPS").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
+/*FaCPS*/
+function openNavFACPS()
+{
+    document.getElementById("FACPS").style.width = "400px";
+    document.getElementById("main").style.marginLeft = "400px";
+}
+
+function closeNavFACPS() 
+{
+    document.getElementById("FACPS").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
 
 /*FCPS*/
 function openNavFCPS()
@@ -178,23 +190,20 @@ function CloseMainMenu()
 }
 
 
-setTimeout(automaticlose, 60000);
+var t 
 
 function automaticlose()
 {
-    var t = setTimeout(automaticlose, 60000);
-    document.getElementById("mainMenuDiv").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
+    t = setTimeout(function(){
+        document.getElementById("mainMenuDiv").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }, 300000);
+    
 }
 
-function resettimeout()
+function resetTimeout()
 {
-    clearTimeout(t);
-}
-
-function restarttimeout()
-{
-    setTimeout(automaticlose, 60000);
+    clearTimeout(t)
 }
 
 
@@ -202,27 +211,45 @@ function restarttimeout()
 var elem = document.documentElement;
 
 /* View in fullscreen */
-function openFullscreen() {
-  if (elem.requestFullscreen) {
+function openFullscreen() 
+{
+  if (elem.requestFullscreen) 
+  {
     elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { /* Firefox */
+  } 
+  else if (elem.mozRequestFullScreen) 
+  { /* Firefox */
     elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+  } 
+  else if (elem.webkitRequestFullscreen) 
+  { /* Chrome, Safari and Opera */
     elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+  } 
+  else if (elem.msRequestFullscreen) 
+  { /* IE/Edge */
     elem.msRequestFullscreen();
   }
 }
 
+
+
 /* Close fullscreen */
-function closeFullscreen() {
-  if (document.exitFullscreen) {
+function closeFullscreen() 
+{
+  if (document.exitFullscreen) 
+  {
     document.exitFullscreen();
-  } else if (document.mozCancelFullScreen) { /* Firefox */
+  } 
+  else if (document.mozCancelFullScreen) 
+  { /* Firefox */
     document.mozCancelFullScreen();
-  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+  } 
+  else if (document.webkitExitFullscreen) 
+  { /* Chrome, Safari and Opera */
     document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE/Edge */
+  } 
+  else if (document.msExitFullscreen) 
+  { /* IE/Edge */
     document.msExitFullscreen();
   }
 }

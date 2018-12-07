@@ -245,7 +245,7 @@ h5
     font-size: 20px;
     width: 80%;
     transition-duration: .5s;
-    font-family:  Helvetica, sans-serif;
+    font-family:  monospace;
 }
 
 .customeroptions:hover
@@ -385,7 +385,7 @@ li a
 
 .customerdocs
 {
-    font-family: 'Dosis', sans-serif;
+    font-family: monospace;
     text-transform: uppercase;
     text-align: left;
     text-indent: 10px;
@@ -393,11 +393,13 @@ li a
     width: 100%;
     color:#dddddd;
     background-image: linear-gradient(to right,rgb(0, 147, 167),rgb(52, 94, 121),rgb(121, 52, 117),rgb(76, 52, 121) );
+    max-height: 83px;
+    font:bolder;
 }
 
 .customerdocs:hover
 {
-    font-family: 'Dosis', sans-serif;
+    font-family: monospace;
     text-transform: uppercase;
     text-align: left;
     text-indent: 10px;
@@ -405,11 +407,14 @@ li a
     width: 100%;
     color:#dddddd;
     background-image: linear-gradient(to left,rgb(0, 147, 167),rgb(52, 94, 121),rgb(121, 52, 117),rgb(76, 52, 121) );
+    max-height: 83px;
+    
+    
 }
 
 .Dalydocs
 {
-    font-family: 'Dosis', sans-serif;
+    font-family: monospace;
     text-transform: uppercase;
     text-align: left;
     text-indent: 10px;
@@ -421,7 +426,7 @@ li a
 
 .Weblinks
 {
-    font-family: 'Dosis', sans-serif;
+    font-family: monospace;
     text-transform: uppercase;
     text-align: left;
     text-indent: 10px;
@@ -481,19 +486,29 @@ li a
     display: block;
     transition-duration: .5s;
     letter-spacing: 6px; 
+    font:bolder;
 }
 
 .sidebar a:hover
 {
     padding: 8px 8px 8px 8px;
     text-decoration: none;
-    color: #b9b9b9;
-    font-size: 35px;
+    color: #e7e7e7;
+    font-size: 40px;
     display: block;
-    transition-duration: .5s;    
+    transition-duration: .5s; 
 }
 
-
+.sidebar p 
+{
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    display: block;
+    transition-duration: .5s;
+    letter-spacing: 6px; 
+}
 
 
 .sidebar .closebtn
