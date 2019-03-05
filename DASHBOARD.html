@@ -28,8 +28,6 @@
     <script type="text/javascript" src="scripts/camera.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
 
-
-
 </head>
 
 <body>
@@ -39,11 +37,10 @@
     </header>
     <div class="overlay2"></div>
 
-    
-    
-    <div id="mainMenuDiv" class="mainmenublock" onmouseover="resetTimeout()" onmouseleave="automaticlose()">
+        
+    <div id="mainMenuDiv" class="mainmenublock" onclick="automaticlose()">
             <button href="javascript:void(0)" class="closebtn" onclick="CloseMainMenu()">×</button>
-        <nav class="mainmenu" onmouseover="resetTimeout()" onmouseleave="automaticlose()">
+        <nav class="mainmenu" onclick="automaticlose()">
             <ul>
                 <li><a class="customerbutton" onclick="openNavAACPS(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">AACPS</span><span class="customerName">Anne Arundel Co.</span></a></li>
                 <li><a class="customerbutton" onclick="openNavBCPS(); "><img class="buttonimage" src="images/doubleArrow.png"><span class="customerabbr">BCPS</span><span class="customerName">Baltimore City</span></a></li>
@@ -89,7 +86,6 @@
         <a href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\BALTIMORE CITY 21st\" target="_blank"><span class="customeroptions">Thermal LabelS</span><img class="icon" src="images/folder.png"></a>
     </div>
     
-
     <div id="BOEBCPS" class="sidebar">
         <button href="javascript:void(0)" class="closebtn" onclick="closeNavBOEBCPS()">×</button>
         <div class="customerdocs">
@@ -115,7 +111,7 @@
         </div>  
         <a onclick="alertmessage()" href="\\storage1\Prod\Quality Assurance\FaCPS\Imaging\Fauquier County Chromebooks enrollment process.docx"><span class="customeroptions">Chromebook Enrollment</span><img class="icon" src="images/file.png"></a>
         <a href="\\STORAGE1\Prod\Quality Assurance\FaCPS\Fauquier County Chromebook Enrollment BARCODES\" target="_blank"><span class="customeroptions">Chromebook Barcodes</span><img class="icon" src="images/folder.png"></a>
-        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\FAUQUIER\FAUQUIER CO.btw"><span class="customeroptions">Thermal Label (WHITE)</span><img class="icon" src="images/barcode1.png"></a>
+        <a onclick="alertmessage()" href="\\STORAGE1\Prod\Quality Assurance\SIGNS AND LABELS\Thermal Labels\FAUQUIER\FAUQUIER CO.btw"><span class="customeroptions">Thermal Label</span><img class="icon" src="images/barcode1.png"></a>
     </div>  
 
     <div id="FCPS" class="sidebar">
@@ -205,6 +201,7 @@
             <a href="https://support.lenovo.com/us/en/" target="_blank"><span class="customeroptions">Lenovo Support</span><img class="icon" src="images/webicon.png"></a>
             <a href="https://support.microsoft.com/en-us" target="_blank"><span class="customeroptions">Microsoft Support</span><img class="icon" src="images/webicon.png"></a>
             <a href="https://www.hpe.com/us/en/support.html" target="_blank"><span class="customeroptions">HP Enterprise Support</span><img class="icon" src="images/webicon.png"></a>
+            <a href="http://192.168.2.68/networkmonitor/index.php" target="_blank"><span class="customeroptions">Monitor Status</span><img class="icon" src="images/webicon.png"></a>
     </div>
 
     <div class="fluid_container">
