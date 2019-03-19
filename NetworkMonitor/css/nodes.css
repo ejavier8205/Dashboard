@@ -1,0 +1,74 @@
+
+<style>
+.nodeHtml {
+    background-color: rgb(66, 66, 66);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+    overflow: hidden;   
+}
+
+.nodeTitle {
+    top: 10px;
+    color: rgb(146, 197, 64);
+    font-size: 7vw;
+    text-indent: 5px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    border-radius: 25px;
+    left: 10px;
+    min-width: 1000px;
+    letter-spacing: 5px;
+
+}
+
+#time {
+    font-size: 3vw;    
+    right: 50px;
+    color: rgba(177, 177, 177, 0.7);
+    padding: 1px;
+    position: fixed;
+    position: absolute;
+    letter-spacing: 2px;
+
+}
+
+
+.stationContainer {
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-color: rgb(26, 26, 26);
+    border-radius: 50px;
+}
+
+.stationName {
+    font-size: 300%;
+    color: rgb(146, 197, 64);
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    background-color: rgb(70, 69, 69);
+    border-radius: 10px;
+}
+
+.customerName {
+    display: block;
+    font-size: 200%;    
+    color: rgb(37, 144, 139);
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+
+.nodeContainer {
+   width: 100%;
+   position: center;
+   height: 80%;
+}
+
+</style>

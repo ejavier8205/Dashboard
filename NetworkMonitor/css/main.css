@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(114, 61, 128);
+  }
+
+
+h1 {
+    top: 10px;
+    color:rgb(255, 255, 255);
+    font-size: 2vw;
+    background-color: rgba(128, 128, 128, 0.7);
+    text-indent: 30px;
+    display: inline-block;
+    position: fixed;
+    z-index: 1;
+    width: 90%;
+    border-radius: 50px;
+    padding: 10px;
+    left: 20px;
+    margin-bottom: 20px;
+    min-width: 1000px;
+}
+
+.Production {
+    color:  rgb(174, 216, 110);
+
+
+}
+
+
+#time {
+    font-size: 2vw; 
+    position: relative; 
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    float: right;
+    right: 50px;
+    color: rgba(0, 253, 194, 0.7);
+
+}
+
+#myInput {
+    width: 20%;
+    font-size: 50%;
+    padding: 10px;
+    border-radius: 50Px;
+    cursor: pointer;
+    margin-left: 50px;
+    background-color: rgba(0, 253, 194, 0.3);   
+    border-style: none;
+    transition: 0.5s;
+    height: 50%;    
+  }
+
+  #myInput:hover {
+    background-color: rgb(0, 253, 194); 
+  }
+
+  #myInput:focus {
+    background-color: rgb(0, 253, 194);
+  }
+
+table {
+    float: left;
+    max-width: 800px;
+    min-width:800px;
+	table-layout:fixed;
+    border-collapse: collapse;
+    scroll-behavior: smooth;
+    z-index: 1;
+    padding: 10px;
+    margin-left: 20px;
+    overflow: hidden;
+    display:block;
+    background-color: rgba(66, 66, 66, 0.7);
+    border-radius: 25px;
+    padding: 20px;
+    height:70%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding:5px 10px;
+}
+
+
+thead {
+    border-radius: 50px;
+	background-color: gray;
+	display:table;
+	width:100%;
+    width:calc(100% - 18px);
+    text-align: left;
+    margin-bottom: 10px;
+}
+tbody {
+    height: 90%;
+	overflow: auto;
+    overflow-x:hidden;
+	display:block;
+    width:100%;
+    font-size: 80%;
+}
+
+tbody tr {
+	display:table;
+	width:100%;
+    table-layout:fixed;
+}
+
+
+
+.tablerows:hover, #DisconnectedRow:hover {
+    background-color: rgb(105, 105, 105);
+}
+
+
+#DisconnectedRow {
+    background-color: rgba(255, 0, 0, 0.3);
+    color: white;
+    
+}
+
+tbody::-webkit-scrollbar {
+    width: 8px;
+}
+
+tbody.thin::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgb(92, 92, 92);
+    margin: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background:  rgb(174, 216, 110);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(100, 100, 100, 0.4); 
+}
+
+.customerHeader {
+    border-radius: 50px 0px 0px 50px;
+    width: 200px;
+}
+
+
+
+.customerHeader:Hover {
+    background: linear-gradient( #23A6D5, #23D5AB);
+    color: black;
+    cursor: pointer;
+}
+
+.TimeHeader {
+    border-radius: 0px 50px 50px 0px;
+    padding-right: 50px;
+}
+
+.StationHeader {
+    width: 200px;
+}
+
+.stationHeader:hover {
+    background: linear-gradient( #23A6D5, #23D5AB);
+    color: black;
+    cursor: pointer;
+}
+.customer {
+    text-align: left;
+    color: rgb(207, 207, 207);
+    font-size: 15px;
+    font-weight: bolder;
+    width: 200px;
+    letter-spacing: 2px;
+}
+
+
+.station {
+    color: rgb(174, 216, 110);
+    letter-spacing: 2px;
+    width: 200px;
+
+}
+
+.IPHeader {
+    width: 100px;
+}
+
+.IP {
+    color: rgb(120, 120, 120);
+}
+
+.Date {
+    color: rgb(120, 120, 120);
+
+}
+
+.time {
+    color: rgb(120, 120, 120);
+
+}
+
+/*Prince William County*/
+#PWCS {
+    color: rgb(255, 255, 0);
+
+}
+
+#AACPS{
+
+    color: rgb(187, 113, 255);
+}
+
+#GHOST {
+    color: rgb(74, 187, 121);
+
+}
+
+#NOTCONNECTED {
+    color: firebrick;
+
+}
+
+#BOEBCPS {
+    color:#23A6D5;
+}
+
+#LCPS {
+    color: coral;
+}
+
+#FaCPS {
+    color: indianred;
+}
+
+#DALY {
+    color:lawngreen;
+}
+
+.sidepanel {
+    display: inline-block;
+    width: 300px;
+    min-width: 150px;
+    position: fixed;
+	color: #fff;
+	background: linear-gradient( rgba(35, 165, 213, 0.527), rgba(35, 213, 171, 0.541));
+    margin: 20px;
+    border-radius: 25px;
+    height: fit-content;
+    margin-top: 100px;
+}
+
+.sidePanelTitle {
+    color: rgb(0, 121, 92);
+    margin: 10px;
+    background-color: rgba(0, 253, 194, 0.76);
+    border-radius: 25px;
+   text-align: center;
+    padding: 5px;
+    font-size: 100%;
+    width: 90%;
+    float: center;
+
+}
+
+.sidePanelContainer {
+    padding: 5px;
+}
+
+.sidePanelData {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    width: 90%;
+    padding: 5px;
+    text-indent: 20px;
+}
+
+
+.imagecontainer {
+    margin: 10px;
+    border-radius: 25px;
+   text-align: center;
+    padding: 5px;
+    font-size: 100%;
+    width: 90%;
+    float: center;
+}
+
+
+.tableContainer {
+    float: left;
+    max-width: 800px;
+    min-width:800px;
+	table-layout:fixed;
+    border-collapse: collapse;
+    scroll-behavior: smooth;
+    z-index: 1;
+    padding: 10px;
+    margin-left: 20px;
+    overflow: hidden;
+    display:block;
+    background-color: rgba(66, 66, 66, 0.7);
+    border-radius: 25px;
+    padding: 20px;
+    height:70%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+
+ 
